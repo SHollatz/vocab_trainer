@@ -1,3 +1,234 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.main {
+  height:100%;
+}
+
+header {
+  width: 100%;
+  height: 60px; 
+  font-family: 'Domine', serif;
+  background-color: #ffffff;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #31a4f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+h1 {
+  padding: 0 10px 0 10px;
+  width: 200px;
+  height: 60px;
+  font-size: 22px;
+  line-height: 2.5;
+  letter-spacing: 2px;
+  background-color: #31a4f0;
+  border-radius: 0px 0px 5px 5px;
+  color: white;
+  text-align: center;
+  float: left; 
+}
+
+#home {
+  color: #f9eebf;
+}
+
+h6 {
+  font-size:16px;
+}
+
+.navigation {
+  width: 700px;
+  height: 60px;
+  padding: 20px 0 20px 0;
+  font-size: 16px;
+  text-align: center;
+  float:right;
+}
+
+
+a:link {
+  text-decoration: none;
+  color:  #777777;
+  margin: 10px;
+  border-right-color: black;
+  text-align: center;
+}
+
+a:hover {
+  color: #555555;
+  font-weight: bold;
+}
+
+a:active {
+  color: #31a4f0;
+}
+
+footer {
+  width: 100%;
+  height: 42px;
+  background-color: #31a4f0;
+  position: fixed;
+  bottom:0;
+  left:0;
+  z-index: 1
+}
+  
+.copyright {
+  box-sizing: border-box;
+  margin-top: 2px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  padding: 5px;
+  text-align: center;
+  background-color: #f9eebf;
+  color: #31a4f0;
+}
+
+#home_body,
+#games_body,
+#words_body,
+#about_body {
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-color: #ebd6b5;
+  position: relative;
+}
+
+#main_content_home {
+  background-image: url("../images/haha.jpg");
+  background-size: 960px 700px;
+  width: 960px;
+  height: 560px;
+  padding: 40px;
+  font-family: 'Inconsolata', monospace;
+  background-color:#ffffff;
+  position: relative;
+  margin:200px auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#main_content_words {
+  width: 960px;
+  height: 1000px;
+  padding: 40px;
+  font-family: 'Inconsolata', monospace;
+  background-color:#ffffff;
+  position: relative;
+  margin: 50px auto auto 230px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#main_content_games {
+  width: 960px;
+  height: 1000px;
+  padding: 40px;
+  font-family: 'Inconsolata', monospace;
+  background-color:#ffffff;
+  position: relative;
+  margin: 50px auto auto 230px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#main_content_about {
+  width: 960px;
+  height: 1000px;
+  padding: 40px;
+  font-family: 'Inconsolata', monospace;
+  background-color:#ffffff;
+  position: relative;
+  margin: 0px auto auto 230px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#main_content_about {
+  width: 960px;
+  height: 1000px;
+  padding: 40px;
+  font-family: 'Inconsolata', monospace;
+  background-color:#ffffff;
+  position: relative;
+  margin:200px auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#portrait {
+  width:334.29px; 
+  height:327.14px;
+  margin: 10px 20px 5px 10px;
+  float:left;
+}
+
+#about_me {
+  line-height: 1.3;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0px;
+  top: 75px;
+  padding: 15px 0 0 15px;
+  width: 200px;
+  height: 1000px;
+  margin-right: auto;
+  margin-left: 0px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 10px;
+  background-color:#ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+  width: 150px;
+  background-color: #31a4f0;
+  border-color:#226da0;
+  border-radius: 5px;
+  color: #ebd6b5;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.chosen-select {
+  width: 150px;
+}
