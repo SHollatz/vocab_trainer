@@ -43,6 +43,14 @@ h1 {
   float: left; 
 }
 
+#home {
+  color: #f9eebf;
+}
+
+h6 {
+  font-size:16px;
+}
+
 .navigation {
   width: 700px;
   height: 60px;
@@ -67,7 +75,7 @@ a:hover {
 }
 
 a:active {
-  color: rgba(100, 132, 236, 0.842);
+  color: #31a4f0;
 }
 
 footer {
@@ -88,10 +96,14 @@ footer {
   font-size: 16px;
   padding: 5px;
   text-align: center;
-  background-color: #666666;
+  background-color: #f9eebf;
+  color: #31a4f0;
 }
 
-#home_body {
+#home_body,
+#games_body,
+#words_body,
+#about_body {
   background-size: auto auto;
   background-repeat: no-repeat;
   background-color: #ebd6b5;
@@ -115,8 +127,7 @@ footer {
   border-radius: 10px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-<<<<<<< Updated upstream
-=======
+
 
 #main_content_words {
   width: 960px;
@@ -132,6 +143,7 @@ footer {
   border-radius: 10px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 #main_content_games {
   width: 960px;
@@ -156,6 +168,7 @@ footer {
   background-color:#ffffff;
   position: relative;
   margin: 50px auto;
+
   border-style: solid;
   border-width: 1px;
   border-color: #cccccc;
@@ -169,6 +182,7 @@ footer {
   margin: 10px 20px 5px 10px;
   float:left;
 }
+
 
 #about_me,
 #about_project {
@@ -195,6 +209,7 @@ footer {
   border-radius: 10px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 .results {
   position: absolute;
@@ -416,4 +431,4 @@ footer {
       height: 500px;
   }
 }
->>>>>>> Stashed changes
+
