@@ -108,6 +108,7 @@ footer {
   background-repeat: no-repeat;
   background-color: #ebd6b5;
   position: relative;
+  text-align: center;
 }
 
 #main_content_home {
@@ -119,13 +120,14 @@ footer {
   font-family: 'Inconsolata', monospace;
   background-color:#ffffff;
   position: relative;
-  margin:200px auto;
+  margin: 75px auto;
   border-style: solid;
   border-width: 1px;
   border-color: #cccccc;
   border-radius: 10px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 #main_content_words {
   width: 960px;
@@ -141,6 +143,7 @@ footer {
   border-radius: 10px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 #main_content_games {
   width: 960px;
@@ -164,22 +167,8 @@ footer {
   font-family: 'Inconsolata', monospace;
   background-color:#ffffff;
   position: relative;
-  margin: 0px auto auto 230px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #cccccc;
-  border-radius: 10px;
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  margin: 50px auto;
 
-#main_content_about {
-  width: 960px;
-  height: 1000px;
-  padding: 40px;
-  font-family: 'Inconsolata', monospace;
-  background-color:#ffffff;
-  position: relative;
-  margin:200px auto;
   border-style: solid;
   border-width: 1px;
   border-color: #cccccc;
@@ -194,7 +183,9 @@ footer {
   float:left;
 }
 
-#about_me {
+
+#about_me,
+#about_project {
   line-height: 1.3;
   font-size: 20px;
   margin-right: 10px;
@@ -219,11 +210,30 @@ footer {
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-button {
+
+.results {
+  position: absolute;
+  top: 75px;
+  left: 1220px;
+  padding: 40px;
+  width: 400px;
+  height: 1000px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 10px;
+  background-color:#ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#select_words_choice {
   width: 150px;
   background-color: #31a4f0;
   border-color:#226da0;
   border-radius: 5px;
+  border: 1px;
   color: #ebd6b5;
   font-size: 16px;
   font-weight: bold;
@@ -232,3 +242,193 @@ button {
 .chosen-select {
   width: 150px;
 }
+
+.cards {
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  float: left;
+  margin: 5px;
+}
+
+.clearfloat {
+  clear: both;
+  overflow: auto;
+}
+
+.message {
+  font-size: 26px;
+  font-weight: bolder;
+  color: red;
+}
+@media screen and (max-width:980px) {
+  #home_body,
+  #games_body,
+  #words_body,
+  #about_body {
+      max-width: 980px;
+      height: auto;
+  }
+
+  header {
+      width:100%;
+  }
+
+  h1 {
+      width:200px;
+  }
+
+  .navigation {
+      width: 72%;
+  } 
+
+  a:link {
+      margin:5px;
+  }
+
+  hr {
+      width:650px;
+  }
+
+  #portrait {
+      width:234px;
+      height: 229px;
+      float:left;
+  }
+
+  #about_me,
+  #about_project {
+      line-height: 1.3;
+      font-size: 22px;
+      margin:0 10px 10px 5px; 
+  }
+
+  #main_content_home,
+  #main_content_words,
+  #main_content_games,
+  #main_content_about {
+      width:700px;
+      height: 530px;
+      margin: 100px auto 20px auto;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #home_body,
+  #games_body,
+  #words_body,
+  #about_body {
+      max-width: 768px;
+      height: auto;
+  }
+
+  header {
+      width:100%;
+      height:65px;
+  }
+
+  h1 {
+      width:100%;
+      line-height: 1;
+      height: 35px;
+      padding: 5px;
+  }
+
+  .navigation {
+      width: 100%;
+      height: 30px;
+      padding: 5px;
+  }
+
+  hr {
+      width:530px;
+  }
+  
+  #about_me,
+  #about_project {
+      font-size: 20px; 
+      line-height: 1.2;   
+  }
+
+  #main_content_home,
+  #main_content_words,
+  #main_content_games,
+  #main_content_about {
+      width: 600px;
+      height: 500px;
+      margin: 60px auto 0 auto;
+      padding: 30px;
+  }
+} 
+  
+@media screen and (max-width:640px) {
+  #home_body,
+  #games_body,
+  #words_body,
+  #about_body {
+      /* max-width: 640px; */
+      height: auto;
+  }
+
+  header {
+      width:100%;
+  }
+
+  .header_content {
+      width: 100%;
+  }
+
+  h1 {
+      font-size: 20px;
+      height: 30px;
+  }
+
+  .navigation {
+      font-size: 14px;
+  }
+
+  h2 {
+      font-size: 26px;
+  }
+  
+  .main {
+      width:550px;
+      height:1000px;
+      margin: 0 auto 0 auto;
+  }
+
+  #main_content_about {
+      width:450px;
+      height:1700px;
+      padding: 20px 20px 20px 20px;
+  }
+
+  hr {
+      width:400px;
+  }
+ 
+  #portrait {
+      margin:0 0 10px 0;
+      width:351px;
+      height: 343.5px;
+  }
+
+  #about_me,
+  #about_project {
+      margin: 0 auto 10px auto;
+      width:351px;
+      width: 351px;
+  }
+
+  #main_content_home {
+      width:450px;
+      height:500px;
+  }
+
+  #main_content_games, 
+  #main_content_words {
+      width:450px;
+      height: 500px;
+  }
+}
+

@@ -44,6 +44,7 @@ module.exports = function(app) {
 
   app.get("/games", function(req, res) {
     db.Word.findAll({}).then(function(dbWords) {
+      //console.log("inside htmlRoutes, dbWords: ", dbWords);
       res.render("games", {
         word: dbWords
       });
