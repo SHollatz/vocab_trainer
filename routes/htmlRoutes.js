@@ -7,6 +7,10 @@ module.exports = function(app) {
     res.render("games");
   });
 
+  app.get("/words", function(req, res) {
+    res.render("words");
+  });
+
   app.get("/about", function(req, res) {
     res.render("about");
   });
