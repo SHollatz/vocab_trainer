@@ -9,8 +9,15 @@
 body {
   max-width: 100%;
   max-height: 100%;
+  background-image: url("../images/sprinkles.png");
   background-color: #ebd6b5;
   position: relative;
+  color:  #216999;
+}
+
+
+#about_body {
+    background-image: url("../images/haha.jpg")
 }
 
 .main {
@@ -21,7 +28,7 @@ header {
   width: 100%;
   height: 60px; 
   font-family: 'Domine', serif;
-  background-color: #ffffff;
+  background-color: #faf3d7;
   border-bottom-style: solid;
   border-width: 1px;
   border-color: #31a4f0;
@@ -38,12 +45,16 @@ h1 {
   font-size: 22px;
   line-height: 2.5;
   letter-spacing: 2px;
-  background-color: #31a4f0;
+  background-color: #216999;
   border-radius: 0px 0px 5px 5px;
-  color: white;
   text-align: center;
   float: left; 
 }
+
+#home {
+    color: #f9eebf;
+}
+
 
 .navigation {
   width: 700px;
@@ -54,22 +65,25 @@ h1 {
   float:right;
 }
 
-
+#words,
+#games,
+#feedback,
+#about,
 a:link {
   text-decoration: none;
-  color:  #777777;
+  color:  #216999;
   margin: 10px;
-  border-right-color: black;
   text-align: center;
+  text-shadow: 1px 1px #053453,
+
 }
 
 a:hover {
-  color: #555555;
-  font-weight: bold;
+    font-weight: bold;;
 }
 
-a:active {
-  color: rgba(100, 132, 236, 0.842);
+a:visited {
+    background-color: orange;
 }
 
 footer {
@@ -90,14 +104,20 @@ footer {
   font-size: 16px;
   padding: 5px;
   text-align: center;
-  background-color: #666666;
+  background-color: #faf3d7;;
+  color:  #216999;
+  text-shadow:
+  -.3px -.3px 0 #13415f,
+   .3px -.3px 0 #13415f,
+  -.3px .3px 0 #13415f,
+   .3px .3px 0 #13415f;
 }
 
 #main_content_home {
   background-image: url("../images/haha.jpg");
   background-size: 960px 700px;
   width: 960px;
-  height: 560px;
+  height: 700px;
   padding: 40px;
   font-family: 'Inconsolata', monospace;
   background-color:#ffffff;
@@ -112,7 +132,7 @@ footer {
 
 #main_content_words {
   width: 960px;
-  height: 1000px;
+  height: 800px;
   padding: 40px;
   font-family: 'Inconsolata', monospace;
   background-color:#ffffff;
@@ -125,14 +145,41 @@ footer {
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#games_title {
+    float: left;
+}
+
+#start {
+    margin-left: 150px;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-delay: 2s;
+    width: 150px;
+    background-color: #216999;
+    border-color:#226da0;
+    border-radius: 5px;
+    border: 1px;
+    color: #faf3d7;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+#input_submit {
+    width: 150px;
+    background-color: #216999;
+    border-color:#226da0;
+    border-radius: 5px;
+    border: 1px;
+    color: #faf3d7;
+    font-size: 16px;
+}
+
 #main_content_games {
   width: 960px;
-  height: 1000px;
+  height: 800px;
   padding: 40px;
   font-family: 'Inconsolata', monospace;
   background-color:#ffffff;
-  position: relative;
-  margin: 50px auto auto 230px;
+  margin: 50px auto auto 100px;
   border-style: solid;
   border-width: 1px;
   border-color: #cccccc;
@@ -142,7 +189,7 @@ footer {
 
 #main_content_about {
   width: 960px;
-  height: 1000px;
+  height: 850px;
   padding: 40px;
   font-family: 'Inconsolata', monospace;
   background-color:#ffffff;
@@ -153,6 +200,10 @@ footer {
   border-color: #cccccc;
   border-radius: 10px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.italic {
+    font-style: italic;
 }
 
 #portrait {
@@ -169,7 +220,7 @@ footer {
   margin-right: 10px;
 }
 
-.sidebar {
+/* .sidebar {
   position: absolute;
   left: 0px;
   top: 75px;
@@ -186,34 +237,24 @@ footer {
   border-color: #cccccc;
   border-radius: 10px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 
 .results {
   position: absolute;
   top: 75px;
-  left: 1220px;
+  left: 780px;
   padding: 40px;
-  width: 400px;
-  height: 1000px;
+  width: 300px;
+  height: 800px;
   font-family: 'Inconsolata', monospace;
   font-size: 10px;
+  margin: auto auto auto 300px;
   background-color:#ffffff;
   border-style: solid;
   border-width: 1px;
   border-color: #cccccc;
   border-radius: 10px;
   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#select_words_choice {
-  width: 150px;
-  background-color: #31a4f0;
-  border-color:#226da0;
-  border-radius: 5px;
-  border: 1px;
-  color: #ebd6b5;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .chosen-select {
@@ -226,6 +267,10 @@ footer {
   text-align: center;
   float: left;
   margin: 5px;
+  border-radius: 5px;
+  background-color: #faf8ec;
+  color: #216999;
+  font-weight: bold;
 }
 
 .clearfloat {
